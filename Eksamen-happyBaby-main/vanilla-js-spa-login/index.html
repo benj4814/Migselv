@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content=" initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="En nem og overskuelig side til dig som ønsker at følge dit barns udvikling via en app. - finde hjælp til diverse problemstillinger der kan opstå i de første levemåneder. ">
+    <meta name="author" content="Benjamin, Jeppe, Clara, Sofie">
+    <title>Happy Baby</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@1,700&display=swap" rel="stylesheet">
+  </head>
+
+<body>
+  <a href="index.html" class="logo"><img src="img/logo.png" alt="Logo"></a>
+  <!-------------- Navigation -------------->
+  <nav>
+    <a href="#/" class="nav-link"><img src="img/hus.webp" alt="hus"></a>
+    <a href="#/about" class="nav-link"><img src="img/information.png" alt="chat"></a>
+    <a href="#/clients" class="nav-link"><img src="img/logbog4.png"></a>
+  </nav>
+
+  <main id="appRoot">
+    <!-------------- Pages -------------->
+
+
+    <!-- Login page -->
+    <section id="login" class="page">
+      <header class="header">
+        <a href="index.html" class="logo"><img src="img/logo.png" alt="Logo"></a>
+        <a href="#/minbaby" class="minBaby nav-link"><img src="img/minbaby.png" alt="minBaby"></a>
+      </header>
+      <h2 class="velkommen_tekst">Velkommen til Happy Baby.</h2>
+      <p class="tekst_login">Her kan du finde informationer omkring dit barns velvære og følge dit barns udvikling. Du kan finde en logbog til at skrive lige præcis de informationer du synes er vigtige i og alt relevant om din baby.</p>
+      <h3 class="login_tekst">Login</h3>
+      <form>
+        <input id="login-mail" type="email" placeholder="Type email">
+        <input id="login-password" type="password" placeholder="Password">
+        <button type="button" onclick="login()">Login</button>
+      </form>
+   
+      
+      </section>
+    </section>
+
+     <!-- home page -->
+     <section id="home" class="page">
+      <header class="header">
+        <a href="index.html" class="logo"><img src="img/logo.png" alt="Logo"></a>
+        <a href="#/minbaby" class="minBaby nav-link"><img src="img/minbaby.png" alt="minBaby"></a>
+      </header>
+      <a class="logout" onclick="logout()">Logout</a>
+      <p class="tekst_login">Her kan du skrive informationer omkring dit barn. Du kan følge med i vægt, alder og sætte et billede ind!</p>
+      <form id="opretForm">
+        
+        <label for="navn">navn</label>
+        <input id="navn" placeholder="navn..." type="text">
+        <br>
+        
+        <label for="alder">alder</label>
+        <input id="alder" placeholder="alder..." type="text">
+        <br>
+        
+        <label for="vægt">vægt</label>
+        <input id="vægt" placeholder="vægt..." type="text">
+        <br>
+
+        <label for="billede">billede</label>
+        <input id="billede"  type="file">
+        <br>
+
+       
+
+      </form>
+      <a href="#/minbaby" onclick="sendBaby()">Tilføj baby</a>
+    </section>
+    
+    <!-- about page -->
+    <section id="about" class="page">
+      <header class="header">
+        <a href="index.html" class="logo"><img src="img/logo.png" alt="Logo"></a>
+        <a href="#/minbaby" class="minBaby nav-link"><img src="img/minbaby.png" alt="minBaby"></a>
+      </header>
+      <div id="babyContainer2"></div>
+
+      <section id="users-container" class="grid-container"></section>
+   
+      <!-- Filter -->   
+         
+        </section>
+
+      
+    <!-- clients page -->
+    <section id="clients" class="page">
+      <header class="header">
+        <a href="index.html" class="logo"><img src="img/logo.png" alt="Logo"></a>
+        <a href="#/minbaby" class="minBaby nav-link"><img src="img/minbaby.png" alt="minBaby"></a>
+      </header>
+
+      
+      <p>Clients page. Here goes some content.</p>
+    </section>
+
+    <!-- clients page -->
+    <section id="contact" class="page">
+      
+      <header class="topbar">
+        <h2>Contact</h2>
+      </header>
+      <p>This is a contact page</p>
+    </section>
+    
+    <!-- minbaby page -->
+    <section id="minbaby" class="page">
+      <header class="header">
+        <a href="index.html" class="logo"><img src="img/logo.png" alt="Logo"></a>
+        <a href="#/minbaby" class="minBaby nav-link"><img src="img/minbaby.png" alt="minBaby"></a>
+      </header>
+      <p>Her skal der være informationer om din bbbby</p>
+      <div id="babyContainer"></div>
+    </section>
+
+  </main>
+
+  <script src="./js/app.js" type="module"></script>
+  <script src="./js/main.js"></script>
+</body>
+
+</html>
